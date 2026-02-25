@@ -28,11 +28,28 @@ Un **Sprint Change Proposal** guardado en `_bmad-output/implementation-artifacts
 
 ---
 
-## Cómo funciona
+## Flujo paso a paso
 
-El workflow es una conversación guiada. Primero entiende el problema, luego analiza el impacto en epics y artefactos (PRD, arquitectura, UX), luego propone los cambios concretos con formato antes/después, y finalmente genera el documento y lo enruta a quien corresponda.
+**1. Entender el cambio**
+El workflow pregunta qué ocurrió y verifica que los documentos del proyecto estén disponibles. También define el modo de trabajo: Incremental (refinar cada cambio uno a uno) o Batch (ver todo junto al final). Sin un trigger claro, se detiene.
 
-Todo es colaborativo: el usuario toma las decisiones, el workflow estructura el análisis.
+**2. Analizar el impacto**
+Revisa sistemáticamente qué se ve afectado: cuáles epics ya no pueden completarse como se planearon, si el PRD o la arquitectura entran en conflicto, y si el MVP sigue siendo alcanzable. También evalúa las tres opciones de solución (ver abajo) para recomendar la mejor.
+
+**3. Proponer los cambios concretos**
+Por cada artefacto afectado genera una propuesta en formato antes/después con su justificación. En modo Incremental el usuario aprueba, edita o descarta cada una. En modo Batch las ve todas juntas.
+
+**4. Generar el Sprint Change Proposal**
+Consolida todo en un documento: resumen del problema, análisis de impacto, enfoque recomendado, propuestas de cambio, y a quién se le entrega para implementar.
+
+**5. Aprobar y enrutar**
+El usuario aprueba el documento. Si hay correcciones vuelve al paso anterior. Si se aprueba, se clasifica el scope del cambio y se entrega a quien corresponda.
+
+---
+
+## Cómo funciona en general
+
+Es una conversación guiada y colaborativa. El workflow estructura el análisis, el usuario toma las decisiones.
 
 ---
 
