@@ -31,19 +31,19 @@ Un **Sprint Change Proposal** guardado en `_bmad-output/implementation-artifacts
 ## Flujo paso a paso
 
 **1. Entender el cambio**
-El workflow pregunta qué ocurrió y verifica que los documentos del proyecto estén disponibles. También define el modo de trabajo: Incremental (refinar cada cambio uno a uno) o Batch (ver todo junto al final). Sin un trigger claro, se detiene.
+El workflow pregunta qué ocurrió y pide evidencia concreta: errores, feedback de stakeholders, restricciones descubiertas. También verifica que los documentos del proyecto estén disponibles y define el modo de trabajo: Incremental (refinar cada cambio uno a uno) o Batch (ver todo junto al final). Sin un trigger claro o sin evidencia, se detiene.
 
 **2. Analizar el impacto**
-Revisa sistemáticamente qué se ve afectado: cuáles epics ya no pueden completarse como se planearon, si el PRD o la arquitectura entran en conflicto, y si el MVP sigue siendo alcanzable. También evalúa las tres opciones de solución (ver abajo) para recomendar la mejor.
+Revisa en orden: qué epics ya no pueden completarse como se planearon, si alguno debe modificarse, diferirse o redefinirse, y si el cambio crea dependencias nuevas entre epics. Luego revisa los artefactos: si el PRD entra en conflicto, si la arquitectura necesita ajustes (componentes, APIs, modelos de datos), si la UX se ve afectada, y si el MVP sigue siendo alcanzable. Con todo eso evalúa las tres opciones de solución y recomienda la mejor.
 
 **3. Proponer los cambios concretos**
-Por cada artefacto afectado genera una propuesta en formato antes/después con su justificación. En modo Incremental el usuario aprueba, edita o descarta cada una. En modo Batch las ve todas juntas.
+Por cada artefacto afectado genera una propuesta en formato antes/después con su justificación. Cubre stories, PRD, arquitectura y UX según aplique. En modo Incremental el usuario aprueba, edita o descarta cada una antes de continuar. En modo Batch las ve todas juntas al final.
 
 **4. Generar el Sprint Change Proposal**
-Consolida todo en un documento: resumen del problema, análisis de impacto, enfoque recomendado, propuestas de cambio, y a quién se le entrega para implementar.
+Consolida todo en un documento: resumen del problema con su contexto y evidencia, análisis de impacto, enfoque recomendado con su justificación y estimación de riesgo, todas las propuestas de cambio, y el plan de handoff con criterios de éxito.
 
 **5. Aprobar y enrutar**
-El usuario aprueba el documento. Si hay correcciones vuelve al paso anterior. Si se aprueba, se clasifica el scope del cambio y se entrega a quien corresponda.
+El usuario revisa y aprueba el documento. Si hay correcciones vuelve al paso que corresponda. Una vez aprobado, se clasifica el scope del cambio (menor, moderado, mayor) y se entrega a quien debe ejecutarlo.
 
 ---
 
